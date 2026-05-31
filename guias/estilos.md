@@ -47,10 +47,10 @@ Variáveis para colar no seu CSS:
 
 ```css
 :root {
-    --bg-page: #f9f6f0; /* Off-white/Bege clarinho elegante */
+    --bg-page: #f9f6f0; /* Bege claro elegante */
     --bg-card: #ffffff; /* Fundo dos cards branco */
-    --primary-color: #333333; /* Chumbo (quase preto) para não cansar a vista */
-    --accent-color: #bfa593; /* Nude/Marrom claro sofisticado */
+    --primary-color: #333333; /* Chumbo para não cansar a vista */
+    --accent-color: #bfa593; /* Marrom claro sofisticado */
     --text-main: #4a4a4a; /* Cinza escuro para os textos longos */
     --border-color: #e3dcd2; /* Bege mais escuro para bordas finas */
 }
@@ -73,10 +73,10 @@ Variáveis para colar no seu CSS:
 :root {
     --bg-page: #fbdcea; /* Fundo rosa algodão doce */
     --bg-card: #ffffff; /* Fundo dos cards branco */
-    --primary-color: #7e9ae6; /* Azul periwinkle (destaque principal) */
-    --accent-color: #73dce6; /* Turquesa vibrante (detalhes mágicos) */
+    --primary-color: #7e9ae6; /* Azul periwinkle */
+    --accent-color: #73dce6; /* Turquesa vibrante */
     --text-main: #4a5568; /* Azul marinho acinzentado para leitura */
-    --border-color: #dbd9ff; /* Lilás clarinho para as bordas */
+    --border-color: #dbd9ff; /* Lilás claro para as bordas */
 }
 
 /* Dica: use 'Fredoka' para títulos e 'Quicksand' para textos! */
@@ -100,11 +100,11 @@ Variáveis para colar no seu CSS:
     --primary-color: #8d0701; /* Vermelho cereja fechado */
     --accent-color: #ff758f; /* Rosa choque quente para dar contraste */
     --text-main: #2b2b2b; /* Preto suave para os textos */
-    --border-color: #ffccd5; /* Rosa bem clarinho para detalhes */
+    --border-color: #ffccd5; /* Rosa bem claro para detalhes */
 }
 
 /* Dica: use 'Shrikhand' para títulos e 'Poppins' para textos! */
 ```
 
 ## 💡 Dica extra
-Não gostou de nenhum e quer criar a sua própria paleta? Acesse o Coolors.co e aperte a barra de espaço até achar uma combinação de cores que seja a sua cara!
+Não gostou de nenhum e quer criar a sua própria paleta? Acesse o [Coolors.co](https://coolors.co/) e aperte a barra de espaço até achar uma combinação de cores que seja a sua cara!
