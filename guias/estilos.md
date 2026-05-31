@@ -10,7 +10,7 @@ Por último, copie o bloco de cores e substitua o bloco :root que está no topo 
 
 
 ## 🖤 Kit 1: grunge acetinado
-![kit1](image.png)
+![kit1](./imagens/image.png)
 
 Fontes para colar no seu HTML:
 
@@ -35,7 +35,7 @@ Variáveis para colar no seu CSS:
 ```
 
 ## 🌙 Kit 2: boho místico
-![kit2](image-1.png)
+![kit2](./imagens/image-1.png)
 
 Fontes para colar no seu HTML:
 
@@ -59,7 +59,7 @@ Variáveis para colar no seu CSS:
 ```
 
 ## 🦋 Kit 3: magical girl
-![kit3](image-2.png)
+![kit3](./imagens/image-2.png)
 
 Fontes para colar no seu HTML:
 
@@ -83,7 +83,7 @@ Variáveis para colar no seu CSS:
 ```
 
 ## 🍒 Kit 4: retrô pop
-![kit4](image-3.png)
+![kit4](./imagens/image-3.png)
 
 Fontes para colar no seu HTML:
 
