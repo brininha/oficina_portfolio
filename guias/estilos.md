@@ -1,7 +1,5 @@
 # 🎨 Kits de estilo
-Boas-vindas à nossa galeria de estilos! Programar é incrível, mas colocar a sua personalidade no código é o que torna o projeto realmente seu.
-
-Abaixo, cada kit já vem com as cores e as fontes combinando para você se inspirar e montar seu portfólio.
+Boas-vindas à nossa galeria de estilos! Abaixo, cada kit já vem com as cores e as fontes combinando para você se inspirar e montar seu portfólio.
 
 ### 🛠️ Como usar?
 Escolha o seu estilo favorito abaixo.
@@ -13,7 +11,6 @@ Por último, copie o bloco de cores e substitua o bloco :root que está no topo 
 
 ## 🖤 Kit 1: grunge acetinado
 ![kit1](image.png)
-Alternativo, noturno, urbano e com muito contraste.
 
 Fontes para colar no seu HTML:
 
@@ -34,12 +31,11 @@ Variáveis para colar no seu CSS:
 }
 
 
-/* Dica: Use 'UnifrakturMaguntia' para Títulos e 'Space Mono' para Textos! */
+/* Dica: use 'UnifrakturMaguntia' para títulos e 'Space Mono' para textos! */
 ```
 
 ## 🌙 Kit 2: boho místico
 ![kit2](image-1.png)
-Elegante, minimalista, acolhedor e maduro.
 
 Fontes para colar no seu HTML:
 
@@ -59,12 +55,11 @@ Variáveis para colar no seu CSS:
     --border-color: #e3dcd2; /* Bege mais escuro para bordas finas */
 }
 
-/* Dica: Use 'DM Serif Display' para Títulos e 'Inter' para Textos! */
+/* Dica: use 'DM Serif Display' para títulos e 'Inter' para textos! */
 ```
 
 ## 🦋 Kit 3: magical girl
 ![kit3](image-2.png)
-Pastel, vibrante, fofo, nostálgico e com a energia dos anos 2000.
 
 Fontes para colar no seu HTML:
 
@@ -84,12 +79,11 @@ Variáveis para colar no seu CSS:
     --border-color: #dbd9ff; /* Lilás clarinho para as bordas */
 }
 
-/* Dica: Use 'Fredoka' para Títulos e 'Quicksand' para Textos! */
+/* Dica: use 'Fredoka' para títulos e 'Quicksand' para textos! */
 ```
 
 ## 🍒 Kit 4: retrô pop
 ![kit4](image-3.png)
-Vibrante, quente, com atitude de sobra e inspirado nos anos 70.
 
 Fontes para colar no seu HTML:
 
@@ -101,7 +95,7 @@ Variáveis para colar no seu CSS:
 
 ```css
 :root {
-    --bg-page: #f4f4f4; /* Cinza super claro para deixar o vermelho brilhar */
+    --bg-page: #f4f4f4; /* Cinza claro para deixar o vermelho brilhar */
     --bg-card: #ffffff; /* Fundo dos cards branco */
     --primary-color: #8d0701; /* Vermelho cereja fechado */
     --accent-color: #ff758f; /* Rosa choque quente para dar contraste */
@@ -109,7 +103,7 @@ Variáveis para colar no seu CSS:
     --border-color: #ffccd5; /* Rosa bem clarinho para detalhes */
 }
 
-/* Dica: Use 'Shrikhand' para Títulos e 'Poppins' para Textos! */
+/* Dica: use 'Shrikhand' para títulos e 'Poppins' para textos! */
 ```
 
 ## 💡 Dica extra
