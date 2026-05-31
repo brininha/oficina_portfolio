@@ -1,300 +1,375 @@
-/* ==========================================
-   PALETA DE CORES POP/RETRO
-   ========================================== */
 :root {
-    --bg-creme: #f2efe9;      /* Fundo da página */
-    --azul-marinho: #23408e;  /* Cor principal (títulos e caixas) */
-    --rosa-choque: #ec6b8f;   /* Cor de destaque */
-    --branco: #ffffff;
-    --texto-escuro: #1a1a1a;
+    --bg-page: #ffffff;
+    --bg-card: #f8f9fa;
+    --primary-color: #2b2b2b;
+    --accent-color: #ffc107;
+    --text-main: #555555;
+    --border-color: #e0e0e0;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', 'Segoe UI', sans-serif;
 }
 
 body {
-    background-color: var(--bg-creme);
-    color: var(--azul-marinho);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-.pop-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden; /* Evita que a faixa de texto cause rolagem horizontal */
+h1, h2, h3, h4 {
+    color: var(--primary-color);
 }
 
-/* ==========================================
-   HERO (ARTE INICIAL)
-   ========================================== */
-.hero-art {
-    text-align: center;
-    padding: 4rem 2rem 2rem;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.logo-text {
-    font-size: 6rem;
-    line-height: 0.9;
-    font-weight: 900;
-    letter-spacing: -2px;
-    color: var(--azul-marinho);
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: var(--bg-page);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color);
+}
+
+.logo-circle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px solid var(--accent-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.greeting {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h1 span {
+    color: var(--accent-color);
+}
+
+.hero-content .description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.social-links a {
+    color: var(--accent-color);
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
     position: relative;
-    display: inline-block;
 }
 
-.estrela {
-    color: var(--rosa-choque);
-    font-size: 3rem;
+.blob-background {
     position: absolute;
-    bottom: 10px;
-    right: -40px;
+    width: 350px;
+    height: 350px;
+    background-color: var(--accent-color);
+    opacity: 0.2;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.subtitle {
-    margin-top: 1rem;
-    font-weight: bold;
-    letter-spacing: 2px;
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
-/* ==========================================
-   EFEITO: FAIXA ROLANTE (MARQUEE)
-   ========================================== */
-.faixa-rolante {
-    background-color: var(--azul-marinho);
-    color: var(--branco);
-    padding: 1rem 0;
-    white-space: nowrap;
-    overflow: hidden;
-    font-weight: bold;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    margin: 2rem 0;
-}
-
-.faixa-rolante.bottom {
-    background-color: var(--azul-marinho);
-    margin-bottom: 0;
-}
-
-.texto-rolante {
-    display: inline-block;
-    /* A mágica acontece aqui: uma animação infinita que move o texto */
-    animation: rolarTexto 20s linear infinite;
-}
-
-@keyframes rolarTexto {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-
-/* ==========================================
-   SOBRE MIM (E O EFEITO BLOB)
-   ========================================== */
-.sobre-mim {
+.about-section {
     display: flex;
     align-items: center;
     gap: 4rem;
-    padding: 2rem;
+    padding: 5rem 5%;
+    background-color: var(--bg-page);
 }
 
-.foto-container {
+.about-image {
+    flex: 1;
     position: relative;
-    width: 300px;
-    height: 350px;
-}
-
-/* O Segredo do formato irregular (Blob) */
-.blob-rosa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--rosa-choque);
-    /* Usando valores diferentes de border-radius para criar formas fluidas */
-    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-    z-index: 1;
-}
-
-.foto-perfil {
-    position: relative;
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 50%;
-    z-index: 2;
-    top: 30px;
-    left: 10px;
-}
-
-.estrela-solta {
-    position: absolute;
-    color: var(--azul-marinho);
-    font-size: 4rem;
-    left: -20px;
-    bottom: 0;
-    z-index: 3;
-}
-
-.texto-sobre h2 {
-    font-size: 4rem;
-    color: var(--azul-marinho);
-    margin-bottom: 1rem;
-}
-
-.hello {
-    font-size: 2rem;
-    color: var(--rosa-choque);
-    font-weight: normal;
-}
-
-.texto-sobre p {
-    font-size: 1.1rem;
-    color: var(--texto-escuro);
-    margin-bottom: 2rem;
-    line-height: 1.6;
-}
-
-.titulo-contatos {
-    color: var(--azul-marinho);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.lista-contatos {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.lista-contatos li {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--azul-marinho);
-    font-weight: bold;
-}
-
-.lista-contatos i {
-    color: var(--rosa-choque);
-    font-size: 1.2rem;
-}
-
-/* ==========================================
-   EDUCAÇÃO E SKILLS (GRID)
-   ========================================== */
-.grid-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Caixa de Educação Azul */
-.caixa-educacao {
-    background-color: var(--azul-marinho);
-    color: var(--branco);
-    border-radius: 20px;
-    padding: 3rem 2rem 2rem;
-    position: relative;
-}
-
-/* Título Rosa que "vaza" pra fora da caixa */
-.tag-titulo-rosa {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    background-color: var(--rosa-choque);
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-radius: 15px;
-}
-
-.item-edu {
-    margin-bottom: 2rem;
-}
-
-.badge-contorno {
-    display: inline-block;
-    border: 2px solid var(--rosa-choque);
-    color: var(--branco);
-    padding: 0.3rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Caixa de Skills com Faixa Lateral */
-.caixa-skills {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-.faixa-lateral-rosa {
-    background-color: var(--rosa-choque);
-    color: var(--branco);
-    padding: 1rem;
-    border-radius: 15px;
-    writing-mode: vertical-lr; /* Faz o texto ficar deitado na vertical */
-    transform: rotate(180deg); /* Vira o texto para ler de baixo pra cima */
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    height: 100%;
-}
-
-.grid-icones {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    width: 100%;
-}
-
-.icone-skill {
-    text-align: center;
-    font-weight: bold;
-}
-
-.box-icone {
-    border: 3px solid var(--azul-marinho);
-    border-radius: 15px;
-    height: 80px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    background-color: var(--branco);
 }
 
-/* ==========================================
-   RESPONSIVIDADE (Celular)
-   ========================================== */
-@media (max-width: 800px) {
-    .sobre-mim, .grid-info {
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        gap: 2rem;
+.blob-background-alt {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary-color);
+    opacity: 0.1;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    margin-bottom: 2.5rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--primary-color);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+.projects-section {
+    padding: 5rem 5%;
+    background-color: var(--bg-card);
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: transparent;
+    color: var(--text-main);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.filter-buttons button.active, .filter-buttons button:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--bg-page);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+.project-link {
+    color: var(--accent-color);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
     }
     
-    .logo-text { font-size: 4rem; }
-    
-    .lista-contatos { grid-template-columns: 1fr; }
-    
-    .caixa-skills {
+    .hero-section {
         flex-direction: column;
+        text-align: center;
+        gap: 3rem;
     }
     
-    .faixa-lateral-rosa {
-        writing-mode: horizontal-tb; /* Volta o texto pro normal */
-        transform: none;
-        width: 100%;
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .about-section {
+        flex-direction: column;
+        text-align: center;
     }
 }

@@ -3,95 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Criativo</title>
+    <title>Meu Portfólio Tech</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="pop-container">
-        
-        <header class="hero-art">
-            <h1 class="logo-text">Port<br>fólio <span class="estrela">✦</span></h1>
-            <p class="subtitle">— [Seu Nome] | Desenvolvedora —</p>
-        </header>
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-circle"></span> Meu<strong>portfólio</strong>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+        </nav>
+        <a href="#contato" class="btn-primary">Contato</a>
+    </header>
 
-        <div class="faixa-rolante">
-            <div class="texto-rolante">
-                SOBRE MIM ✦ SOBRE MIM ✦ SOBRE MIM ✦ SOBRE MIM ✦ SOBRE MIM ✦ SOBRE MIM ✦
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <p class="greeting">Olá, eu sou a Ana Silva</p>
+            <h1>Estudante de <span>Desenvolvimento de Sistemas</span></h1>
+            <p class="description">
+                Apaixonada por tecnologia, infraestrutura e por usar o código para criar impacto social e educacional.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projetos" class="btn-primary">Ver projetos</a>
+                <a href="#" class="btn-outline">Baixar currículo</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="#"><i class="ph ph-github-logo"></i></a>
+                <a href="#"><i class="ph ph-envelope-simple"></i></a>
             </div>
         </div>
+        <div class="hero-image">
+            <div class="blob-background"></div>
+            <img src="./profile_photo2.png" alt="Minha Foto">
+        </div>
+    </section>
 
-        <section class="sobre-mim">
-            <div class="foto-container">
-                <div class="blob-rosa"></div>
-                <img src="./profile_photo.jpg" alt="Minha Foto" class="foto-perfil">
-                <span class="estrela-solta">✦</span>
-            </div>
-
-            <div class="texto-sobre">
-                <h2>¡Hola! <span class="hello">¡Hello!</span></h2>
-                <p>Sou estudante de tecnologia apaixonada por assumir novos desafios e aprender constantemente. Meu propósito é desenvolver soluções com código limpo, capazes de conectar pessoas de maneira estética e funcional.</p>
-                
-                <h3 class="titulo-contatos">Contatos</h3>
-                <ul class="lista-contatos">
-                    <li><i class="ph ph-envelope-simple"></i> seuemail@gmail.com</li>
-                    <li><i class="ph ph-github-logo"></i> github.com/seugithub</li>
-                    <li><i class="ph ph-linkedin-logo"></i> linkedin.com/in/seunome</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="grid-info">
+    <section id="sobre" class="about-section">
+        <div class="about-image">
+            <div class="blob-background-alt"></div>
+            <img src="./profile_photo.jpg" alt="Trabalhando no computador">
+        </div>
+        <div class="about-content">
+            <h2>Sobre mim</h2>
+            <p>
+                Atualmente curso o Técnico em Desenvolvimento de Sistemas do Instituto Federal de Guarulhos. Meu foco técnico atual envolve automações e explorações no mundo da inteligência artificial.
+            </p>
             
-            <div class="caixa-educacao">
-                <div class="tag-titulo-rosa">EDUCAÇÃO ✦</div>
-                
-                <div class="item-edu">
-                    <span class="badge-contorno">CURSO SUPERIOR</span>
-                    <p><strong>Sistemas de Informação</strong><br>
-                    Universidade Federal (2024 - Atual)</p>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Design</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
                 </div>
-
-                <div class="item-edu">
-                    <span class="badge-contorno">IDIOMAS</span>
-                    <p><strong>Inglês Avançado</strong><br>
-                    Escola de Idiomas (2019 - 2023)</p>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Comunicação</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
                 </div>
-            </div>
-
-            <div class="caixa-skills">
-                <div class="faixa-lateral-rosa">HARD SKILLS</div>
-                
-                <div class="grid-icones">
-                    <div class="icone-skill">
-                        <div class="box-icone">JS</div>
-                        <span>JavaScript</span>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>HTML & CSS</span>
+                        <span>90%</span>
                     </div>
-                    <div class="icone-skill">
-                        <div class="box-icone">Py</div>
-                        <span>Python</span>
-                    </div>
-                    <div class="icone-skill">
-                        <div class="box-icone">Re</div>
-                        <span>React</span>
-                    </div>
-                    <div class="icone-skill">
-                        <div class="box-icone">Git</div>
-                        <span>GitHub</span>
-                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
                 </div>
-            </div>
-
-        </section>
-
-        <div class="faixa-rolante bottom">
-            <div class="texto-rolante">
-                SOFT SKILLS: TRABALHO EM EQUIPE — ADAPTABILIDADE — EMPATIA — CRIATIVIDADE —
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Gestão de projetos</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                </div>
             </div>
         </div>
+    </section>
 
-    </div>
+    <section id="projetos" class="projects-section">
+        <div class="section-header">
+            <h2>Meus projetos e iniciativas</h2>
+            <p>Um pouco do que tenho construído na faculdade, no estágio e no voluntariado.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="active">Todos</button>
+            <button>Front-end</button>
+            <button>Voluntariado</button>
+            <button>Eventos</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=500&auto=format&fit=crop" alt="Projeto Conversor de Moedas">
+                </div>
+                <div class="project-info">
+                    <h3>Conversor de moedas</h3>
+                    <p>Aplicação web interativa desenvolvida com HTML, CSS e JavaScript para realizar conversões de moedas em tempo real, aplicando lógica de programação e manipulação do DOM.</p>
+                    <a href="#" class="project-link">Ver repositório <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=500&auto=format&fit=crop" alt="Reunião de equipe">
+                </div>
+                <div class="project-info">
+                    <h3>Cursinho Popular EACH USP</h3>
+                    <p>Atuação no setor de Inovação e Tecnologia, liderando projetos de inclusão digital e desenvolvimento de soluções tecnológicas para democratizar o acesso ao ensino.</p>
+                    <a href="#" class="project-link">Ver projeto <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=500&auto=format&fit=crop" alt="Oficina de tecnologia">
+                </div>
+                <div class="project-info">
+                    <h3>EXATECCA</h3>
+                    <p>Mentoria e facilitação de uma oficina prática de desenvolvimento web, auxiliando estudantes a construírem e publicarem seus primeiros portfólios utilizando HTML, CSS e GitHub Pages.</p>
+                    <a href="#" class="project-link">Ver fotos do evento <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
