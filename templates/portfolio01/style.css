@@ -4,8 +4,10 @@
     --primary-color: #5d3ebc;
     --accent-color: #fca5c5;
     --text-main: #333333;
-    --text-light: #777777;
     --border-color: #e0e0e0;
+
+    /* Variável de estrutura (não muda com os kits) */
+    --text-light: #777777;
 }
 
 * {
