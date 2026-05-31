@@ -1,0 +1,300 @@
+/* ==========================================
+   PALETA DE CORES POP/RETRO
+   ========================================== */
+:root {
+    --bg-creme: #f2efe9;      /* Fundo da página */
+    --azul-marinho: #23408e;  /* Cor principal (títulos e caixas) */
+    --rosa-choque: #ec6b8f;   /* Cor de destaque */
+    --branco: #ffffff;
+    --texto-escuro: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--bg-creme);
+    color: var(--azul-marinho);
+}
+
+.pop-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden; /* Evita que a faixa de texto cause rolagem horizontal */
+}
+
+/* ==========================================
+   HERO (ARTE INICIAL)
+   ========================================== */
+.hero-art {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+}
+
+.logo-text {
+    font-size: 6rem;
+    line-height: 0.9;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: var(--azul-marinho);
+    position: relative;
+    display: inline-block;
+}
+
+.estrela {
+    color: var(--rosa-choque);
+    font-size: 3rem;
+    position: absolute;
+    bottom: 10px;
+    right: -40px;
+}
+
+.subtitle {
+    margin-top: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* ==========================================
+   EFEITO: FAIXA ROLANTE (MARQUEE)
+   ========================================== */
+.faixa-rolante {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    padding: 1rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin: 2rem 0;
+}
+
+.faixa-rolante.bottom {
+    background-color: var(--azul-marinho);
+    margin-bottom: 0;
+}
+
+.texto-rolante {
+    display: inline-block;
+    /* A mágica acontece aqui: uma animação infinita que move o texto */
+    animation: rolarTexto 20s linear infinite;
+}
+
+@keyframes rolarTexto {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ==========================================
+   SOBRE MIM (E O EFEITO BLOB)
+   ========================================== */
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.foto-container {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+
+/* O Segredo do formato irregular (Blob) */
+.blob-rosa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--rosa-choque);
+    /* Usando valores diferentes de border-radius para criar formas fluidas */
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    z-index: 1;
+}
+
+.foto-perfil {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+    top: 30px;
+    left: 10px;
+}
+
+.estrela-solta {
+    position: absolute;
+    color: var(--azul-marinho);
+    font-size: 4rem;
+    left: -20px;
+    bottom: 0;
+    z-index: 3;
+}
+
+.texto-sobre h2 {
+    font-size: 4rem;
+    color: var(--azul-marinho);
+    margin-bottom: 1rem;
+}
+
+.hello {
+    font-size: 2rem;
+    color: var(--rosa-choque);
+    font-weight: normal;
+}
+
+.texto-sobre p {
+    font-size: 1.1rem;
+    color: var(--texto-escuro);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.titulo-contatos {
+    color: var(--azul-marinho);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.lista-contatos {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.lista-contatos li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--azul-marinho);
+    font-weight: bold;
+}
+
+.lista-contatos i {
+    color: var(--rosa-choque);
+    font-size: 1.2rem;
+}
+
+/* ==========================================
+   EDUCAÇÃO E SKILLS (GRID)
+   ========================================== */
+.grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Caixa de Educação Azul */
+.caixa-educacao {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    border-radius: 20px;
+    padding: 3rem 2rem 2rem;
+    position: relative;
+}
+
+/* Título Rosa que "vaza" pra fora da caixa */
+.tag-titulo-rosa {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: var(--rosa-choque);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.item-edu {
+    margin-bottom: 2rem;
+}
+
+.badge-contorno {
+    display: inline-block;
+    border: 2px solid var(--rosa-choque);
+    color: var(--branco);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Caixa de Skills com Faixa Lateral */
+.caixa-skills {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.faixa-lateral-rosa {
+    background-color: var(--rosa-choque);
+    color: var(--branco);
+    padding: 1rem;
+    border-radius: 15px;
+    writing-mode: vertical-lr; /* Faz o texto ficar deitado na vertical */
+    transform: rotate(180deg); /* Vira o texto para ler de baixo pra cima */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    height: 100%;
+}
+
+.grid-icones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+}
+
+.icone-skill {
+    text-align: center;
+    font-weight: bold;
+}
+
+.box-icone {
+    border: 3px solid var(--azul-marinho);
+    border-radius: 15px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--branco);
+}
+
+/* ==========================================
+   RESPONSIVIDADE (Celular)
+   ========================================== */
+@media (max-width: 800px) {
+    .sobre-mim, .grid-info {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .logo-text { font-size: 4rem; }
+    
+    .lista-contatos { grid-template-columns: 1fr; }
+    
+    .caixa-skills {
+        flex-direction: column;
+    }
+    
+    .faixa-lateral-rosa {
+        writing-mode: horizontal-tb; /* Volta o texto pro normal */
+        transform: none;
+        width: 100%;
+    }
+}
